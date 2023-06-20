@@ -2,24 +2,31 @@ import React from "react";
 import Link from "next/link";
 import { FaFacebookF } from "react-icons/fa";
 import { BsTwitter } from "react-icons/bs";
+import { AiOutlineSend } from "react-icons/ai";
+import { FaLinkedinIn } from "react-icons/fa";
 
 export default function Hero() {
   return (
     <>
-      <div className="w-full h-screen">
-        <div className="flex flex-row h-full">
+      <div className="w-full h-auto">
+        <div className="flex lg:flex-row md:flex-col md:items-center sm:flex-col sm:items-center h-full py-20">
           <div className="w-1/2 flex flex-col justify-center">
             <div className="flex flex-col gap-3">
-              <h1 className="text-[13px] text-[#ff6f91]">SOFTWARE ENGINEER</h1>
-              <h1 className="text-2xl text-[#1d4175] font-bold">Hey! I Am</h1>
-              <h2 className="text-2xl text-[#db4944] font-bold">Hak Vichet</h2>
-              <p className="text-[12px]">
+              <h1 className="text-[13px] text-[#fa8584]">SOFTWARE ENGINEER</h1>
+              <h1 className="text-[40px] text-[#1c1e59] font-bold">
+                Hey! I Am
+              </h1>
+              <h2 className="text-[50px] text-[#fa8584] font-bold">
+                Hak Vichet
+              </h2>
+              <p className="text-[20px]">
                 Innovation, creation lead to the innovate the work and life the
                 future.
               </p>
-              <div className="w-[120px]">
-                <div className="flex items-center justify-center bg-[#ff6f91] text-white rounded-full px-3 py-2">
-                  Contact Me
+              <div className="w-[180px]">
+                <div className="flex flex-row gap-2 items-center justify-center bg-[#ce77fc] hover:bg-[#fa8584] text-white rounded-full px-4 py-4 cursor-pointer">
+                  <p>Contact me</p>
+                  <AiOutlineSend />
                 </div>
               </div>
             </div>
@@ -28,21 +35,21 @@ export default function Hero() {
               <div className="flex flex-row gap-2">
                 <Link
                   href="facebook.com"
-                  className="w-30 h-30 bg-gray-400 p-2 rounded-full"
+                  className=" bg-[#e1e1e1] p-4 rounded-full"
                 >
-                  <FaFacebookF className="" />
+                  <FaFacebookF size={20} color="#1c1e59" className="" />
                 </Link>
                 <Link
                   href="facebook.com"
-                  className="w-30 h-30 bg-gray-400 p-2 rounded-full"
+                  className=" bg-[#e1e1e1] p-4 rounded-full"
                 >
-                  <BsTwitter className="" />
+                  <BsTwitter size={20} color="#1c1e59" className="" />
                 </Link>
                 <Link
                   href="facebook.com"
-                  className="w-30 h-30 bg-gray-400 p-2 rounded-full"
+                  className=" bg-[#e1e1e1] p-4 rounded-full"
                 >
-                  <FaFacebookF className="" />
+                  <FaLinkedinIn size={20} color="#1c1e59" className="" />
                 </Link>
               </div>
             </div>

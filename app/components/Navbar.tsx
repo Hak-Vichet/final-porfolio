@@ -14,17 +14,17 @@ export default function Navbar() {
   ];
   return (
     <>
-      <div className=" w-full bg-cyan-300 fixed top-0">
+      <div className=" w-full bg-white fixed top-0">
         <div className="flex flex-row justify-between items-center mx-10">
           <div className="flex flex-row gap-1 items-center">
-            <BiCodeAlt className="w-[40px] h-[40px]" />
-            <h1 className="text-3xl font-bold">Pro.Dev</h1>
+            <BiCodeAlt className="w-[40px] h-[40px] text-[#1c1e59]" />
+            <h1 className="text-3xl font-bold text-[#ff5652]">Pro.Dev</h1>
           </div>
           <div className="flex flex-row p-2">
             {links.map((link, index) => (
               <div key={index} className="flex p-3">
                 <Link href={link.href}>
-                  <p className="text-white hover:text-red-400">{link.label}</p>
+                  <p className="text-gray-900 hover:text-[#ff5652]">{link.label}</p>
                 </Link>
               </div>
             ))}
@@ -32,7 +32,7 @@ export default function Navbar() {
           <div>
             <BsGithub size={20}/>
           </div>
-          <div className='p-2 bg-red-300 rounded-md '>
+          <div className='py-2 px-4 text-white hover:text-blue-200 bg-[#ce77fc] rounded-md '>
             <Link href='/'>Contact Me</Link>
           </div>
         </div>
