@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import React from "react";
 import Image from "next/image";
 
@@ -36,11 +37,11 @@ export default function Services() {
   ];
   return (
     <>
-      <div className="w-full h-auto mt-20">
+      <div className="w-full h-auto mt-20 py-10">
         <div className="flex flex-col items-center">
-          <h1 className="">WHAT SERVICES I OFFER YOU</h1>
-          <h1 className="font-bold text-3xl">Services</h1>
-          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-6">
+          <h1 className="red-text">WHAT SERVICES I OFFER YOU</h1>
+          <h1 className="title">Services</h1>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
             {servvices.map((service, index) => (
               <div
                 key={index}
@@ -55,7 +56,7 @@ export default function Services() {
                 </div>
                 <div className="flex flex-col items-center">
                   <h1 className="font-bold">{service.title}</h1>
-                  <p className='text-center'>{service.description}</p>
+                  <p className="text-center">{service.description}</p>
                 </div>
               </div>
             ))}

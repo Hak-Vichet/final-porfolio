@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 
 import React from "react";
@@ -6,19 +7,19 @@ import { useState, useEffect } from "react";
 const skills = [
   { scr: "python.png", language: "Python", level: "Junior" },
   { scr: "reactjs.png", language: "ReacJs", level: "Juior" },
-  { scr: "", language: "NextJs", level: "Junior" },
-  { scr: "", language: "Flutter", level: "Junior" },
-  { scr: "", language: "React-Native", level: "Junior" },
+  { scr: "next.png", language: "NextJs", level: "Junior" },
+  { scr: "flutter.png", language: "Flutter", level: "Junior" },
+  { scr: "react-native.png", language: "React-Native", level: "Junior" },
   { scr: "java-script.png", language: "JavaScript", level: "Junior" },
   { scr: "typescript.png", language: "TypeScript", level: "Junior" },
-  { scr: "", language: "Tailwind", level: "Junior" },
-  { scr: "", language: "MongoDB", level: "Junior" },
-  { scr: "", language: "PostgreSQL", level: "Junior" },
+  { scr: "tailwind.png", language: "Tailwind", level: "Junior" },
+  { scr: "mongo.png", language: "MongoDB", level: "Junior" },
+  { scr: "postgre.png", language: "PostgreSQL", level: "Junior" },
   { scr: "mysql.png", language: "MySQL", level: "Junior" },
-  { scr: "", language: "Firebase", level: "Junior" },
-  { scr: "", language: "Git", level: "Intermediate" },
-  { scr: "", language: "GitHub", level: "Intermediate" },
-  { scr: "", language: "GitLab", level: "Intermediate" },
+  { scr: "firebase.png", language: "Firebase", level: "Junior" },
+  { scr: "git.png", language: "Git", level: "Intermediate" },
+  { scr: "github.png", language: "GitHub", level: "Intermediate" },
+  { scr: "gitlab.png", language: "GitLab", level: "Intermediate" },
   { scr: "html.png", language: "HTML", level: "Junior" },
   { scr: "figma.png", language: "Figma", level: "Junior" },
 ];
@@ -38,9 +39,9 @@ export default function SkillBars() {
     <>
       <div className="w-full h-auto mt-20 mb-10">
         <div className="flex flex-col items-center">
-          <h1 className="">MY SKILL PROGRESS SO FAR</h1>
-          <h1 className="font-bold text-3xl">My Skills</h1>
-          <div className="w-full h-[150px] overflow-hidden">
+          <h1 className="red-text">MY SKILL PROGRESS SO FAR</h1>
+          <h1 className="title">My Skills</h1>
+          <div className="w-full h-[150px] overflow-hidden mt-10">
             <div
               className="flex flex-row w-full h-full gap-2 transition-transform duration-3000 ease-linear"
               style={{ transform: `translateX(${position}px)` }}

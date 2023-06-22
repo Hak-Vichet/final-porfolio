@@ -4,12 +4,12 @@ import { LuPhone } from "react-icons/lu";
 export default function ContactMe() {
   return (
     <>
-      <div className="w-full h-auto mb-10">
+      <div className="w-full h-auto mt-20 mb-10">
         <div className="flex flex-col items-center">
-          <p>I want to hear from you</p>
-          <h1 className="text-3xl font-bold">Contact Me</h1>
+          <p className='red-text'>I want to hear from you</p>
+          <h1 className="title">Contact Me</h1>
         </div>
-        <div className="flex flex-row h-full">
+        <div className="flex flex-row h-full mt-10">
           <div className="w-1/2">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4">
               <div className="flex flex-row gap-2 items-center justify-center">
@@ -70,7 +70,7 @@ export default function ContactMe() {
                   placeholder="Enter your message"
                 />
               </div>
-              <div className="bg-red-300 rounded-lg p-2 items-center justify-center">
+              <div className="flex bg-red-300 rounded-lg p-2 items-center justify-center">
                 Send Message
               </div>
             </div>

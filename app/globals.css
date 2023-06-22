@@ -30,3 +30,13 @@
 .card-container {
   @apply flex flex-col gap-0 bg-white items-center rounded-lg  p-5;
 }
+
+.red-text {
+  @apply text-[13px] text-[#e43330];
+}
+.title {
+  @apply text-[30px] text-[#1c1e59] font-bold;
+}
+.description {
+  @apply text-[13px] text-gray-700;
+}
