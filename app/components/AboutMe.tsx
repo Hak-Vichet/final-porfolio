@@ -23,12 +23,12 @@ export default function AboutMe() {
                 <p className="red-text">ABOUT ME</p>
                 <h1 className="title">Why hire me for your company?</h1>
                 <p className="">
-                  I'm a software engineer passionate about innovation and
+                  I&apos;m a software engineer passionate about innovation and
                   problem-solving. I specialize in developing robust and
                   user-friendly software solutions. With expertise in
                   programming and a collaborative mindset, I deliver
-                  high-quality projects on time. Let's create impactful software
-                  together!
+                  high-quality projects on time. Let&apos;s create impactful
+                  software together!
                 </p>
               </div>
               <div className="w-[200px]">
