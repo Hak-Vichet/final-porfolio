@@ -40,7 +40,7 @@ export default function MyWork() {
   ];
   return (
     <>
-      <div className="w-full  mt-20 mb-10">
+      <section id="work" className="w-full  mt-20 mb-10">
         <div className="flex flex-col gap-2 items-center">
           <p className="red-text">CHECK OUT MY RECENT PROJECTS</p>
           <h1 className="title">MY WORK</h1>
@@ -82,7 +82,7 @@ export default function MyWork() {
             </div>
           ))}
         </div>
-      </div>
+      </section>
     </>
   );
 }

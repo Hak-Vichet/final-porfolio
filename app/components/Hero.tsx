@@ -9,8 +9,8 @@ import { FaLinkedinIn } from "react-icons/fa";
 export default function Hero() {
   return (
     <>
-      <div className="w-full h-auto">
-        <div className="flex flex-row lg:flex-row md:flex-col md:items-center sm:flex-col sm:items-center h-full py-20">
+      <section id="home" className="w-full h-screen sm:h-auto">
+        <div className="flex flex-col lg:flex-row md:flex-col md:items-center sm:items-center py-20">
           <div className="w-1/2 flex flex-col justify-center items-center">
             <div className="flex flex-col gap-3">
               <h1 className="text-[13px] text-[#fa8584]">SOFTWARE ENGINEER</h1>
@@ -21,8 +21,10 @@ export default function Hero() {
                 Hak Vichet
               </h2>
               <p className="text-[20px]">
-                Innovation, creation lead to the innovate the work and life the
-                future.
+                Innovation and creation are vital for shaping the future of work
+                and life. These powerful forces drive progress and open doors to
+                new possibilities. I am a software engineer who is passionate to
+                learn new things and create new things.
               </p>
               <div className="w-[180px]">
                 <div className="flex flex-row gap-2 items-center justify-center bg-[#ce77fc] hover:bg-[#fa8584] text-white rounded-full px-4 py-4 cursor-pointer">
@@ -35,19 +37,19 @@ export default function Hero() {
               <p className="text-[13px]">Follow Me:</p>
               <div className="flex flex-row gap-2">
                 <Link
-                  href="facebook.com"
+                  href="https://www.facebook.com/"
                   className=" bg-[#bebec5] p-4 rounded-full"
                 >
                   <FaFacebookF size={20} color="#1c1e59" className="" />
                 </Link>
                 <Link
-                  href="facebook.com"
+                  href=""
                   className=" bg-[#bebec5] p-4 rounded-full"
                 >
                   <BsTwitter size={20} color="#1c1e59" className="" />
                 </Link>
                 <Link
-                  href="facebook.com"
+                  href=""
                   className=" bg-[#bebec5] p-4 rounded-full"
                 >
                   <FaLinkedinIn size={20} color="#1c1e59" className="" />
@@ -65,7 +67,7 @@ export default function Hero() {
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </>
   );
 }

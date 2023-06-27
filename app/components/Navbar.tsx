@@ -14,7 +14,7 @@ export default function Navbar() {
   ];
   return (
     <>
-      <div className=" w-full bg-white fixed top-0">
+      <div className=" w-full bg-white fixed top-0 z-[999]">
         <div className="flex flex-row justify-between items-center mx-10">
           <div className="flex flex-row gap-1 items-center">
             <BiCodeAlt className="w-[40px] h-[40px] text-[#1c1e59]" />

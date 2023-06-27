@@ -6,8 +6,8 @@ import { AiOutlineDownload } from "react-icons/ai";
 export default function AboutMe() {
   return (
     <>
-      <div className="w-full h-auto mt-20">
-        <div className="flex lg:flex-row md:flex-col sm:flex-col md:items-center justify-between md:gap-10">
+      <section id="about" className="w-full h-auto mt-20">
+        <div className="flex lg:flex-row md:flex-col flex-col md:items-center sm:items-center sm:gap-10 justify-between md:gap-10">
           <div className="flex w-1/2 h-full items-center justify-center">
             <div className="flex h-[200px] items-center justify-center">
               <img
@@ -18,27 +18,33 @@ export default function AboutMe() {
             </div>
           </div>
           <div className="w-1/2">
-            <div className='flex flex-col gap-5'>
-              <div className=''>
-                <p className='red-text'>ABOUT ME</p>
-                <h1 className='title'>Why hire me for your company?</h1>
-                <p className=''>
-                  I am 22 years old creactive Software Engineer base in Nakuru,
-                  Kenya specializing in User Interface design and Development. I
-                  build clean, appealing, and functional interfaces which comply
-                  with the latest web standards.
+            <div className="flex flex-col gap-5">
+              <div className="">
+                <p className="red-text">ABOUT ME</p>
+                <h1 className="title">Why hire me for your company?</h1>
+                <p className="">
+                  I'm a software engineer passionate about innovation and
+                  problem-solving. I specialize in developing robust and
+                  user-friendly software solutions. With expertise in
+                  programming and a collaborative mindset, I deliver
+                  high-quality projects on time. Let's create impactful software
+                  together!
                 </p>
               </div>
               <div className="w-[200px]">
-                <div className="flex flex-row gap-2 items-center justify-center bg-[#ce77fc] hover:bg-[#fa8584] text-white rounded-xl px-4 py-4 cursor-pointer">
+                <a
+                  href="/hakvichet-cv.pdf"
+                  className="flex flex-row gap-2 items-center justify-center bg-[#ce77fc] hover:bg-[#fa8584] text-white rounded-xl px-4 py-4 cursor-pointer"
+                  download
+                >
                   <p>Download CV</p>
                   <AiOutlineDownload size={20} />
-                </div>
+                </a>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </>
   );
 }

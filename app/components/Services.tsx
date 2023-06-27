@@ -7,41 +7,35 @@ export default function Services() {
     {
       title: "Web Design",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+        "As a web developer, I am skilled in creating visually appealing and user-friendly websites, leveraging my expertise in web development to enhance online experiences.",
       src: "/coding.png",
     },
     {
       title: "Mobile Development",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+        "I specialize in mobile app development for iOS and Android platforms, creating seamless and engaging experiences for users.",
       src: "/mobile.png",
     },
     {
       title: "IoT Development",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+        "As an IoT engineer, I specialize in designing and developing innovative solutions that leverage the power of interconnected devices, enabling smart and efficient systems.",
       src: "/iot.png",
     },
     {
       title: "Network Engineer",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+        "As a networking engineer, I excel in designing and implementing robust network infrastructures, ensuring seamless connectivity, security, and optimal performance for businesses.",
       src: "networking.png",
-    },
-    {
-      title: "Digital Marketing",
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
-      src: "fas fa-bullhorn",
     },
   ];
   return (
     <>
-      <div className="w-full h-auto mt-20 py-10">
+      <section id="services" className="w-full h-auto mt-20 py-10">
         <div className="flex flex-col items-center">
           <h1 className="red-text">WHAT SERVICES I OFFER YOU</h1>
           <h1 className="title">Services</h1>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
+          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-10">
             {servvices.map((service, index) => (
               <div
                 key={index}
@@ -62,7 +56,7 @@ export default function Services() {
             ))}
           </div>
         </div>
-      </div>
+      </section>
     </>
   );
 }

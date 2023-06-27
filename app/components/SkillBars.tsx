@@ -37,7 +37,7 @@ export default function SkillBars() {
 
   return (
     <>
-      <div className="w-full h-auto mt-20 mb-10">
+      <section id="skills" className="w-full h-auto mt-20 mb-10">
         <div className="flex flex-col items-center">
           <h1 className="red-text">MY SKILL PROGRESS SO FAR</h1>
           <h1 className="title">My Skills</h1>
@@ -77,7 +77,7 @@ export default function SkillBars() {
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </>
   );
 }
