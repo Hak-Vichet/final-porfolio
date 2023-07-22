@@ -6,33 +6,26 @@ import { GrPersonalComputer } from "react-icons/gr";
 export default function MyWork() {
   const projects = [
     {
-      img: "project1.png",
-      title: "Stock Dashboard",
-      description: "A dashboard that displays the latest stock.",
+      img: "web3.png",
+      title: "Web3 Trading Bot",
+      description:
+        "A platform that allows users to buy and sell the trading bots.",
+      liveDemo: "",
+      github: "",
+      technologies: ["React | ", "TypeScript | ", "MeterialUI"],
+    },
+    {
+      img: "dashboard.png",
+      title: "Smart Laundry Dashboard",
+      description: "For user and admin to view status of all machine and admin can manage all machines.",
       liveDemo: "",
       github: "",
       technologies: ["React | ", "TypeScript | ", "TailwindCSS"],
     },
     {
-      img: "project1.png",
-      title: "Stock Dashboard",
-      description: "A dashboard that displays the latest stock.",
-      liveDemo: "",
-      github: "",
-      technologies: ["React | ", "TypeScript | ", "TailwindCSS"],
-    },
-    {
-      img: "project1.png",
-      title: "Stock Dashboard",
-      description: "A dashboard that displays the latest stock.",
-      liveDemo: "",
-      github: "",
-      technologies: ["React | ", "TypeScript | ", "TailwindCSS"],
-    },
-    {
-      img: "project1.png",
-      title: "Stock Dashboard",
-      description: "A dashboard that displays the latest stock.",
+      img: "proadvice.png",
+      title: "Proadvisor",
+      description: "A platform that provide the financial bank advices. Comparing bank featers and chatGPT feature.",
       liveDemo: "",
       github: "",
       technologies: ["React | ", "TypeScript | ", "TailwindCSS"],
@@ -49,13 +42,13 @@ export default function MyWork() {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="flex flex-col gap-0 bg-white items-center rounded-lg p-5"
+              className="flex flex-col w-full  gap-0 bg-white items-center rounded-lg p-5"
             >
-              <div className="flex flex-col m-4">
+              <div className="flex flex-col w-full p-5">
                 <img
                   src={project.img}
                   alt=""
-                  className="w-full scroll-smooth transition duration-500 ease-in-out transform hover:scale-11"
+                  className="w-full max-h-[200px] object-cover rounded-xl scroll-smooth transition duration-500 ease-in-out transform hover:scale-110"
                 />
                 <div>
                   <div className="flex flex-col gap-2">
@@ -67,7 +60,7 @@ export default function MyWork() {
                     </h1>
                     <p className="text-[12px]">{project.description}</p>
                   </div>
-                  <div className="flex flex-row justify-between items-center justify-center mt-5">
+                  <div className="flex flex-row items-center justify-between mt-5">
                     <div className="flex flex-row gap-1">
                       <GrPersonalComputer />
                       <p className="text-[10px] truncate">LIVE DEMO</p>
