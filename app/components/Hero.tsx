@@ -37,19 +37,22 @@ export default function Hero() {
               <p className="text-[13px]">Follow Me:</p>
               <div className="flex flex-row gap-2">
                 <Link
-                  href="https://www.facebook.com/"
+                  target="_blank" rel="noopener noreferrer"
+                  href="https://www.facebook.com/vichet.hak.9"
                   className=" bg-[#bebec5] p-4 rounded-full"
                 >
                   <FaFacebookF size={20} color="#1c1e59" className="" />
                 </Link>
                 <Link
-                  href=""
+                  target="_blank" rel="noopener noreferrer"
+                  href="https://twitter.com/vichet_hak"
                   className=" bg-[#bebec5] p-4 rounded-full"
                 >
                   <BsTwitter size={20} color="#1c1e59" className="" />
                 </Link>
                 <Link
-                  href=""
+                  target="_blank" rel="noopener noreferrer"
+                  href="https://www.linkedin.com/in/vichet-hak-612069205/"
                   className=" bg-[#bebec5] p-4 rounded-full"
                 >
                   <FaLinkedinIn size={20} color="#1c1e59" className="" />

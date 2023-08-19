@@ -1,4 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
+import Link from "next/link";
 import React from "react";
 import { AiFillGithub } from "react-icons/ai";
 import { GrPersonalComputer } from "react-icons/gr";
@@ -10,24 +11,26 @@ export default function MyWork() {
       title: "Web3 Trading Bot",
       description:
         "A platform that allows users to buy and sell the trading bots.",
-      liveDemo: "",
-      github: "",
+      liveDemo: "https://web3-tradingbot.vercel.app/",
+      github: "https://github.com/theanlay/Web3-Tradingbot-Frontend",
       technologies: ["React | ", "TypeScript | ", "MeterialUI"],
     },
     {
       img: "dashboard.png",
       title: "Smart Laundry Dashboard",
-      description: "For user and admin to view status of all machine and admin can manage all machines.",
-      liveDemo: "",
-      github: "",
+      description:
+        "For user and admin to view status of all machine and admin can manage all machines.",
+      liveDemo: "http://192.168.0.54/dashboard?page=machine_info",
+      github: "https://github.com/Nel-sokchhunly/smart-laundry-dashboard-3.0",
       technologies: ["React | ", "TypeScript | ", "TailwindCSS"],
     },
     {
       img: "proadvice.png",
       title: "Proadvisor",
-      description: "A platform that provide the financial bank advices. Comparing bank featers and chatGPT feature.",
-      liveDemo: "",
-      github: "",
+      description:
+        "A platform that provide the financial bank advices. Comparing bank featers and chatGPT feature.",
+      liveDemo: "https://proadvisors.vercel.app/",
+      github: "https://github.com/Hak-Vichet/Proadvisor.git",
       technologies: ["React | ", "TypeScript | ", "TailwindCSS"],
     },
   ];
@@ -61,14 +64,28 @@ export default function MyWork() {
                     <p className="text-[12px]">{project.description}</p>
                   </div>
                   <div className="flex flex-row items-center justify-between mt-5">
-                    <div className="flex flex-row gap-1">
+                    <Link
+                      href={project.liveDemo}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex flex-row gap-1 cursor-pointer hover:underline"
+                    >
                       <GrPersonalComputer />
-                      <p className="text-[10px] truncate">LIVE DEMO</p>
-                    </div>
-                    <div className="flex flex-row gap-1">
+                      <p className="text-[10px] truncate text-blue-500 hover:scale-110">
+                        LIVE DEMO
+                      </p>
+                    </Link>
+                    <Link
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex flex-row gap-1 cursor-pointer hover:underline"
+                    >
                       <AiFillGithub />
-                      <p className="text-[10px] truncate">SOURCE CODE</p>
-                    </div>
+                      <p className="text-[10px] truncate text-blue-500">
+                        SOURCE CODE
+                      </p>
+                    </Link>
                   </div>
                 </div>
               </div>

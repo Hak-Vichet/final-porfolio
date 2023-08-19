@@ -47,7 +47,7 @@ const Navbar2 = () => {
               ))}
 
               <div className="flex flex-row gap-5 items-center ml-5">
-                <Link href="https://github.com/Hak-Vichet">
+                <Link target="_blank" rel="noopener noreferrer" href="https://github.com/Hak-Vichet">
                   <BsGithub size={20} />
                 </Link>
                 <div className="py-2 px-4 text-white hover:text-blue-200 bg-[#ce77fc] rounded-md ">
