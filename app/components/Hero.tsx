@@ -39,21 +39,21 @@ export default function Hero() {
                 <Link
                   target="_blank" rel="noopener noreferrer"
                   href="https://www.facebook.com/vichet.hak.9"
-                  className=" bg-[#bebec5] p-4 rounded-full"
+                  className=" bg-[#bebec5] p-4 rounded-full hover:scale-105"
                 >
                   <FaFacebookF size={20} color="#1c1e59" className="" />
                 </Link>
                 <Link
                   target="_blank" rel="noopener noreferrer"
                   href="https://twitter.com/vichet_hak"
-                  className=" bg-[#bebec5] p-4 rounded-full"
+                  className=" bg-[#bebec5] p-4 rounded-full hover:scale-105"
                 >
                   <BsTwitter size={20} color="#1c1e59" className="" />
                 </Link>
                 <Link
                   target="_blank" rel="noopener noreferrer"
                   href="https://www.linkedin.com/in/vichet-hak-612069205/"
-                  className=" bg-[#bebec5] p-4 rounded-full"
+                  className=" bg-[#bebec5] p-4 rounded-full hover:scale-105"
                 >
                   <FaLinkedinIn size={20} color="#1c1e59" className="" />
                 </Link>

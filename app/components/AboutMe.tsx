@@ -33,7 +33,7 @@ export default function AboutMe() {
               </div>
               <div className="w-[200px]">
                 <a
-                  href="/hakvichet-cv.pdf"
+                  href="/Resume-Hak_Vichet.pdf"
                   className="flex flex-row gap-2 items-center justify-center bg-[#ce77fc] hover:bg-[#fa8584] text-white rounded-xl px-4 py-4 cursor-pointer"
                   download
                 >

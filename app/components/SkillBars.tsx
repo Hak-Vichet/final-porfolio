@@ -25,59 +25,61 @@ const skills = [
 ];
 
 export default function SkillBars() {
-  const [position, setPosition] = useState(0);
+  const [activeIndex, setActiveIndex] = useState(0);
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setPosition((prevPosition) => (prevPosition - 1) % (skills.length * 150));
-    }, 10);
+      setActiveIndex((prevIndex) => (prevIndex + 1) % skills.length);
+    }, 1000); // Adjust the interval duration as needed
 
     return () => clearInterval(interval);
   }, []);
 
   return (
-    <>
-      <section id="skills" className="w-full h-auto mt-20 mb-10">
-        <div className="flex flex-col items-center">
-          <h1 className="red-text">MY SKILL PROGRESS SO FAR</h1>
-          <h1 className="title">My Skills</h1>
-          <div className="w-full h-[150px] overflow-hidden mt-10">
-            <div
-              className="flex flex-row w-full h-full gap-2 transition-transform duration-3000 ease-linear"
-              style={{ transform: `translateX(${position}px)` }}
-            >
-              {skills.map((slide, index) => (
-                <div
-                  key={index}
-                  className="flex flex-col w-[200px] h-full bg-white rounded-lg items-center flex-shrink-0"
-                >
-                  {/* <div className=""> */}
-                  <div className="flex flex-col items-center gap-3 mt-3">
-                    <div className="flex w-[60px] h-[60px] rounded-full bg-gray-300">
-                      <img
-                        src={slide.scr}
-                        alt={slide.scr}
-                        className="w-8 h-8 mx-auto my-auto"
-                      />
-                    </div>
-                    <div className="flex flex-col items-center gap-2">
-                      <h3 className="text-[13px] font-bold">
-                        {slide.language}
-                      </h3>
-                      <div className="py-0 px-4 border-2 border-red-400 rounded-full">
-                        <p className="text-[12px] text-gray-500">
-                          {slide.level}
-                        </p>
-                      </div>
+    <section id="skills" className="w-full h-auto mt-20 mb-10">
+      <div className="flex flex-col items-center">
+        <h1 className="red-text">MY SKILL PROGRESS SO FAR</h1>
+        <h1 className="title">My Skills</h1>
+        <div className="w-full h-[150px] overflow-hidden mt-10">
+          <div
+            className="flex h-full transition-transform duration-1000 ease-in-out"
+            style={{ transform: `translateX(-${activeIndex * 200}px)` }}
+          >
+            {skills.map((slide, index) => (
+              <div
+                key={index}
+                className= {`flex flex-col w-[200px] h-full border-2 justify-between bg-white rounded-lg items-center flex-shrink-0`}
+              >
+                <div className="flex flex-col items-center mt-3">
+                  <div className="flex w-[60px] h-[60px] rounded-full bg-gray-300">
+                    <img
+                      src={slide.scr}
+                      alt={slide.scr}
+                      className="w-8 h-8 mx-auto my-auto"
+                    />
+                  </div>
+                  <div className="flex flex-col items-center gap-2">
+                    <h3 className="text-[13px] font-bold">{slide.language}</h3>
+                    <div className="py-0 px-4 border-2 border-red-400 rounded-full">
+                      <p className="text-[12px] text-gray-500">{slide.level}</p>
                     </div>
                   </div>
                 </div>
-                // </div>
-              ))}
-            </div>
+              </div>
+            ))}
           </div>
         </div>
-      </section>
-    </>
+      </div>
+      <style jsx>{`
+        @keyframes slide {
+          0% {
+            transform: translateX(0);
+          }
+          100% {
+            transform: translateX(-${skills.length * 200}px); // Adjust for the total width of all skills
+          }
+        }
+      `}</style>
+    </section>
   );
 }
