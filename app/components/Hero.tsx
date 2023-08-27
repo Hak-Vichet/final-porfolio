@@ -9,10 +9,10 @@ import { FaLinkedinIn } from "react-icons/fa";
 export default function Hero() {
   return (
     <>
-      <section id="home" className="w-full h-screen sm:h-auto">
-        <div className="flex flex-col lg:flex-row md:flex-col md:items-center sm:items-center py-20">
-          <div className="w-1/2 flex flex-col justify-center items-center">
-            <div className="flex flex-col gap-3">
+      <section id="home" className="w-full h-auto lg:h-screen">
+        <div className="flex flex-col lg:flex-row md:flex-col md:items-center sm:items-center py-10 lg:py-20">
+          <div className="w-full lg:w-1/2 md:w-full flex flex-col justify-center items-center">
+            <div className="flex flex-col sm:w-full gap-3 px-6 lg:px-0">
               <h1 className="text-[13px] text-[#fa8584]">SOFTWARE ENGINEER</h1>
               <h1 className="text-[40px] text-[#1c1e59] font-bold">
                 Hey! I Am
@@ -33,7 +33,7 @@ export default function Hero() {
                 </div>
               </div>
             </div>
-            <div className="flex flex-col gap-2 mt-8 9 items-start">
+            <div className="flex flex-col gap-2 mt-6 sm:mt-8 items-start">
               <p className="text-[13px]">Follow Me:</p>
               <div className="flex flex-row gap-2">
                 <Link
@@ -60,12 +60,12 @@ export default function Hero() {
               </div>
             </div>
           </div>
-          <div className="flex w-1/2 h-full items-center justify-center">
-            <div className="flex h-[500px] items-center justify-center">
+          <div className="w-full lg:w-1/2 h-80 sm:h-full items-center justify-center">
+            <div className="flex h-full items-center justify-center">
               <img
                 src="vichet.png"
                 alt="img"
-                className="flex object-cover justify-center w-[400px] h-[400px] shadow-3xl rounded-lg"
+                className="flex object-cover w-full h-full sm:w-[300px] sm:h-[300px] md:w-[400px] md:h-[400px] lg:w-[500px] lg:h-[500px] shadow-3xl rounded-lg"
               />
             </div>
           </div>
