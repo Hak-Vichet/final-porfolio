@@ -15,11 +15,11 @@ export default function AboutMe() {
                   Why hire me for your company?
                 </h1>
                 <p className="text-gray-600">
-                  I'm a software engineer passionate about innovation and
+                  I am a software engineer passionate about innovation and
                   problem-solving. I specialize in developing robust and
                   user-friendly software solutions. With expertise in
                   programming and a collaborative mindset, I deliver
-                  high-quality projects on time. Let's create impactful software
+                  high-quality projects on time. Let create impactful software
                   together!
                 </p>
               </div>
