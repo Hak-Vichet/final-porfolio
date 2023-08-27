@@ -9,7 +9,7 @@ import { FaLinkedinIn } from "react-icons/fa";
 export default function Hero() {
   return (
     <>
-      <section id="home" className="w-full h-auto lg:h-screen">
+      <section id="home" className="w-full h-auto lg:h-screen mt-20">
         <div className="flex flex-col lg:flex-row md:flex-col md:items-center sm:items-center py-10 lg:py-20">
           <div className="w-full lg:w-1/2 md:w-full flex flex-col justify-center items-center">
             <div className="flex flex-col sm:w-full gap-3 px-6 lg:px-0">
